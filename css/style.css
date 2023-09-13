@@ -741,7 +741,7 @@ body {
         font-size: 2rem; } }
     @media only screen and (max-width: 24.375em) {
       .project__information {
-        font-size: 2.5rem; } }
+        font-size: 1.7rem; } }
     .project__information ul {
       list-style: none; }
   .project__description {
@@ -845,7 +845,7 @@ body {
     font-size: 2rem; }
     @media only screen and (max-width: 33.3em) {
       .skills__item p {
-        font-size: 2.5rem; } }
+        font-size: 2rem; } }
   .skills__head {
     font-size: 4rem;
     display: inline-block;
