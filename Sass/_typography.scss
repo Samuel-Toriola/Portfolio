@@ -32,15 +32,13 @@
     font-size: 4.2rem;
   }
   @media only screen and (max-width: $smaller) {
-    font-size: 3.8rem;
+    font-size: 3.4rem;
   }
 
   @media only screen and (max-width: $smallest) {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
-  @media only screen and (max-width: $tiny) {
-    font-size: 3.3rem;
-  }
+
   @media only screen and (max-width: $tinier) {
     font-size: 2.8rem;
   }
