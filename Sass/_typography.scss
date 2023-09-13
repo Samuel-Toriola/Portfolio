@@ -1,0 +1,143 @@
+.highlight {
+  position: relative;
+  display: inline-block;
+  font-size: 4.7rem;
+  padding: 0 1rem;
+  color: #fff;
+  z-index: 10;
+  animation: moveInLeft 1.2s ease-in 0.1s;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(
+      to right,
+      $color-secondary-dark,
+      $color-primary-dark
+    );
+
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    transform: skew(-15deg);
+    // box-shadow: 0px 1px 2.5rem 1rem rgba(34, 184, 207, 0.3);
+  }
+
+  @media only screen and (max-width: $small) {
+    font-size: 4.2rem;
+  }
+  @media only screen and (max-width: $smaller) {
+    font-size: 3.8rem;
+  }
+
+  @media only screen and (max-width: $smallest) {
+    font-size: 3.5rem;
+  }
+  @media only screen and (max-width: $tiny) {
+    font-size: 3.3rem;
+  }
+  @media only screen and (max-width: $tinier) {
+    font-size: 2.8rem;
+  }
+}
+
+.heading-primary {
+  // text-transform: uppercase;
+  font-family: $font-display-2;
+  font-size: 5.5rem;
+  font-weight: 400;
+  display: inline-block;
+  border-bottom: 3px solid currentColor;
+
+  @media only screen and (max-width: $small) {
+    grid-column: 3 / span 4;
+    font-size: 3rem;
+  }
+}
+
+.heading-secondary {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: $font-display-2;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    display: inline-block;
+
+    height: 2px;
+    width: 3.2rem;
+    background-color: currentColor;
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+
+    height: 2px;
+    width: 3.2rem;
+    background-color: currentColor;
+  }
+}
+
+.heading {
+  margin-bottom: 1.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3.5rem;
+  font-weight: 500;
+
+  color: $color-primary-light;
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    background-image: linear-gradient(
+      to right,
+      $color-primary,
+      $color-secondary-dark 20%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  @media only screen and (max-width: $smaller) {
+    font-size: 3.2rem;
+  }
+}
+
+.btn {
+  color: inherit;
+
+  background-color: transparent;
+  border: none;
+
+  padding: 0.5rem 1.2rem;
+  text-decoration: none;
+  align-self: center;
+  justify-self: center;
+  border-bottom: 1.5px solid $color-grey-light;
+  font-size: 2.2rem;
+  font-family: $font-display-2;
+  transition: all 0.3s;
+
+  &:hover {
+    border-radius: 5px;
+    background-color: $color-primary;
+    transform: translateY(-1px);
+    color: #fff;
+    border-bottom: 1.5px solid transparent;
+  }
+
+  &:active {
+    background-color: $color-primary-dark;
+    transform: translateY(0px);
+    border-bottom: 1.5px solid transparent;
+  }
+}

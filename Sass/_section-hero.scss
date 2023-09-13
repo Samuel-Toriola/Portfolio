@@ -1,0 +1,158 @@
+.hero {
+  padding: 4.8rem 0;
+  height: 89vh;
+  @media only screen and (max-width: $smallest) {
+    height: 80vh;
+  }
+
+  &__container {
+    height: 100%;
+    padding: 6.2rem 0 0 0;
+
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 1.4rem;
+    row-gap: 4.8rem;
+
+    align-items: center;
+    @media only screen and (max-width: $large) {
+      height: 90%;
+      column-gap: 2rem;
+    }
+    @media only screen and (max-width: $medium) {
+      grid-template-rows: repeat(5, 1fr);
+
+      padding: 6.2rem 4.8rem 0 4.8rem;
+    }
+  }
+  &__heading {
+    grid-column: 1/6;
+    grid-row: 1/3;
+    font-family: $font-display;
+    font-size: 5rem;
+    line-height: 1.15;
+    text-transform: uppercase;
+    font-weight: 500;
+    align-self: top;
+    animation: moveInView 0.8s ease;
+
+    @media only screen and (max-width: $large) {
+      grid-column: 1/-1;
+      text-align: center;
+    }
+    @media only screen and (max-width: $small) {
+      font-size: 4.5rem;
+    }
+    @media only screen and (max-width: $smallest) {
+      font-size: 4rem;
+    }
+    @media only screen and (max-width: $tiny) {
+      font-size: 3.7rem;
+    }
+    @media only screen and (max-width: $tinier) {
+      font-size: 3.5rem;
+    }
+  }
+
+  &__sub-container {
+    grid-row: 2/3;
+    grid-column: 6 / span 3;
+    padding: 1.2rem 0.9rem;
+    color: $color-white;
+    font-family: $font-display;
+    background-image: linear-gradient(
+      to right,
+      $color-primary-dark 2%,
+      $color-secondary-dark
+    );
+    background-color: $color-primary-dark;
+    text-align: center;
+    transform: skew(-15deg);
+    backface-visibility: hidden;
+    border-radius: 9px;
+    animation: moveInViewSkew 1.5s ease;
+
+    box-shadow: 0px 1px 2.5rem 2rem rgba(34, 184, 207, 0.2);
+    @media only screen and (max-width: $large) {
+      grid-column: 5 / span 3;
+      grid-row: 3/4;
+    }
+    @media only screen and (max-width: $medium) {
+      grid-column: 4 / span 4;
+      grid-row: 4/5;
+    }
+    @media only screen and (max-width: $small) {
+      grid-column: 3 / span 5;
+      padding: 1.2rem 1.2rem;
+    }
+  }
+  &__sub-head {
+    transform: skew(15deg);
+    backface-visibility: hidden;
+    font-size: 2.8rem;
+    line-height: 1.3;
+    @media only screen and (max-width: $smaller) {
+      font-size: 2.5rem;
+    }
+    @media only screen and (max-width: $smaller) {
+      font-size: 2rem;
+    }
+  }
+  &__description-div {
+    grid-column: 1 / span 4;
+    grid-row: 3/4;
+
+    animation: moveInView 2s ease;
+    @media only screen and (max-width: $large) {
+      grid-column: 2 / span 4;
+
+      grid-row: 3/4;
+    }
+    @media only screen and (max-width: $medium) {
+      grid-column: 2 / span 6;
+    }
+    @media only screen and (max-width: $small) {
+      margin-left: 2.4rem;
+      grid-column: 1 / span 7;
+    }
+    @media only screen and (max-width: $smaller) {
+      grid-column: 1 / span 7;
+    }
+  }
+
+  &__description {
+    gap: 2rem;
+    line-height: 1.5;
+    @media only screen and (max-width: $smaller) {
+      font-size: 1.6rem;
+    }
+  }
+  &__intern {
+    &--link {
+      &:link,
+      &:visited {
+        display: inline-block;
+        text-decoration: none;
+        color: $color-primary;
+      }
+
+      &:hover {
+        color: $color-primary-light;
+      }
+      &:active {
+        color: $color-primary-dark;
+      }
+    }
+  }
+
+  &__btn {
+    grid-column: 4/6;
+    // width: 70%;
+    animation: moveInView 2.5s;
+    margin-bottom: 2.4rem;
+    @media only screen and (max-width: $small) {
+      grid-column: 3 / span 4;
+    }
+  }
+}

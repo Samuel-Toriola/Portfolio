@@ -1,0 +1,116 @@
+@keyframes moveInView {
+  0% {
+    opacity: 0;
+    transform: translateY(15rem);
+  }
+
+  30% {
+    transform: translateY(10rem);
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateY(6rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes moveInViewSkew {
+  0% {
+    opacity: 0;
+    transform: translateY(50%) skew(-5deg);
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateY(20%) skew(-10deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) skew(-15deg);
+  }
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+
+  60% {
+    opacity: 0.7;
+    transform: translateX(-5%);
+  }
+
+  80% {
+    transform: translateX(6%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleInTop {
+  0% {
+    transform: scale(0);
+    transform-origin: 50% 0%;
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: 50% 0%;
+    opacity: 1;
+  }
+}
+@keyframes rollInBlurredRight {
+  0% {
+    transform: translateX(100rem) rotate(720deg);
+    filter: blur(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes rollInRight {
+  0% {
+    transform: translateX(800px) rotate(540deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes swingInTopFwd {
+  0% {
+    transform: rotateX(-100deg);
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg);
+    transform-origin: top;
+    opacity: 1;
+  }
+}
+
+// add to skills container
+.comeInAnimation {
+  &,
+  & > * {
+    opacity: 0;
+    animation: none !important;
+  }
+}
+.come {
+  animation: moveInView 1s ease;
+}
