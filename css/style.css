@@ -608,6 +608,9 @@ body {
     @media only screen and (max-width: 30em) {
       .project__name {
         top: 37%; } }
+    @media only screen and (max-width: 24.375em) {
+      .project__name {
+        top: 34%; } }
     .project__name--rps {
       background-color: rgba(30, 53, 84, 0.8);
       color: #fff; }
@@ -623,6 +626,9 @@ body {
       @media only screen and (max-width: 27.5em) {
         .project__name--rps {
           left: 52%; } }
+      @media only screen and (max-width: 24.375em) {
+        .project__name--rps {
+          top: 42%; } }
     .project__name--nat {
       background-color: rgba(116, 203, 134, 0.8);
       color: #fff; }
@@ -637,6 +643,9 @@ body {
       @media only screen and (max-width: 33.3em) {
         .project__name--nat {
           top: 45%; } }
+      @media only screen and (max-width: 24.375em) {
+        .project__name--nat {
+          top: 39%; } }
     .project__name--forkify {
       background-color: rgba(249, 193, 135, 0.8);
       color: #fff; }
@@ -653,6 +662,9 @@ body {
         .project__name--forkify {
           top: 46%;
           left: 50%; } }
+      @media only screen and (max-width: 24.375em) {
+        .project__name--forkify {
+          top: 39%; } }
     .project__name--ip {
       background-color: rgba(241, 241, 241, 0.8);
       color: #1a1a1a; }
@@ -673,6 +685,9 @@ body {
     .project__name--ip {
       top: 49%;
       left: 55%; } }
+  @media only screen and (max-width: 47em) and (max-width: 24.375em) {
+    .project__name--ip {
+      top: 42%; } }
     .project__name--tip {
       background-color: rgba(197, 228, 231, 0.9);
       color: #1a1a1a; }
@@ -692,6 +707,9 @@ body {
       @media only screen and (max-width: 31.563em) {
         .project__name--tip {
           top: 47%; } }
+      @media only screen and (max-width: 24.375em) {
+        .project__name--tip {
+          top: 40%; } }
     .project__name--omni {
       background-color: rgba(253, 242, 233, 0.8);
       color: #1a1a1a; }
@@ -708,6 +726,9 @@ body {
         .project__name--omni {
           top: 46%;
           left: 50%; } }
+      @media only screen and (max-width: 24.375em) {
+        .project__name--omni {
+          top: 39%; } }
   .project__information {
     padding: 1.2rem;
     margin-top: 1.4rem;

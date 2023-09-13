@@ -88,6 +88,9 @@
     @media only screen and (max-width: $tiny) {
       top: 37%;
     }
+    @media only screen and (max-width: $tiniest) {
+      top: 34%;
+    }
 
     &--rps {
       background-color: rgba($color-rps, 0.8);
@@ -105,6 +108,9 @@
       @media only screen and (max-width: $tinier) {
         left: 52%;
       }
+      @media only screen and (max-width: $tiniest) {
+        top: 42%;
+      }
     }
     &--nat {
       background-color: rgba($color-natours, 0.8);
@@ -120,6 +126,9 @@
 
       @media only screen and (max-width: $smaller) {
         top: 45%;
+      }
+      @media only screen and (max-width: $tiniest) {
+        top: 39%;
       }
     }
     &--forkify {
@@ -137,6 +146,9 @@
       @media only screen and (max-width: $smaller) {
         top: 46%;
         left: 50%;
+      }
+      @media only screen and (max-width: $tiniest) {
+        top: 39%;
       }
     }
     &--ip {
@@ -159,6 +171,9 @@
           top: 49%;
           left: 55%;
         }
+        @media only screen and (max-width: $tiniest) {
+          top: 42%;
+        }
       }
     }
     &--tip {
@@ -180,6 +195,9 @@
       @media only screen and (max-width: $smallest) {
         top: 47%;
       }
+      @media only screen and (max-width: $tiniest) {
+        top: 40%;
+      }
     }
     &--omni {
       background-color: rgba($color-omni, 0.8);
@@ -196,6 +214,9 @@
       @media only screen and (max-width: $smaller) {
         top: 46%;
         left: 50%;
+      }
+      @media only screen and (max-width: $tiniest) {
+        top: 39%;
       }
     }
   }
