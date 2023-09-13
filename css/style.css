@@ -212,7 +212,7 @@ body {
     transform: skew(-15deg); }
   @media only screen and (max-width: 40.8em) {
     .highlight {
-      font-size: 4.2rem; } }
+      font-size: 4rem; } }
   @media only screen and (max-width: 33.3em) {
     .highlight {
       font-size: 3.4rem; } }
