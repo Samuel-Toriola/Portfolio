@@ -835,7 +835,8 @@ body {
     column-gap: 3.2rem;
     padding-bottom: 2.4rem; }
   .skills__item p {
-    line-height: 1.5; }
+    line-height: 1.5;
+    font-size: 2rem; }
   .skills__head {
     font-size: 4rem;
     display: inline-block;
@@ -843,8 +844,6 @@ body {
     @media only screen and (max-width: 33.3em) {
       .skills__head {
         font-size: 3rem; } }
-  .skills__head p {
-    font-size: 2rem; }
 
 .footer {
   padding: 6.2rem 0;
