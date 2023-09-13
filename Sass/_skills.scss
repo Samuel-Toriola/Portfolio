@@ -31,6 +31,9 @@
     p {
       line-height: 1.5;
       font-size: 2rem;
+      @media only screen and (max-width: $smaller) {
+        font-size: 2.5rem;
+      }
     }
   }
   &__head {

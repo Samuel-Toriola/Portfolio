@@ -566,6 +566,9 @@ body {
     .project {
       grid-template-columns: 1fr;
       justify-items: center; } }
+  @media only screen and (max-width: 24.375em) {
+    .project {
+      padding: 2.4rem 1.2rem; } }
   .project__container {
     display: flex;
     flex-direction: column;
@@ -837,6 +840,9 @@ body {
   .skills__item p {
     line-height: 1.5;
     font-size: 2rem; }
+    @media only screen and (max-width: 33.3em) {
+      .skills__item p {
+        font-size: 2.5rem; } }
   .skills__head {
     font-size: 4rem;
     display: inline-block;

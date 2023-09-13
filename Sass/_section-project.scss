@@ -26,6 +26,9 @@
     grid-template-columns: 1fr;
     justify-items: center;
   }
+  @media only screen and (max-width: $tiniest) {
+    padding: 2.4rem 1.2rem;
+  }
 
   &__container {
     display: flex;
@@ -60,9 +63,6 @@
     @media only screen and (max-width: $tinier) {
       height: 63rem;
     }
-    // @media only screen and (max-width: $smallest) {
-    //   width: 90%;
-    // }
   }
 
   &__name {
