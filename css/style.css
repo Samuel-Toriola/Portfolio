@@ -739,6 +739,9 @@ body {
     @media only screen and (max-width: 40.8em) {
       .project__information {
         font-size: 2rem; } }
+    @media only screen and (max-width: 24.375em) {
+      .project__information {
+        font-size: 2.5rem; } }
     .project__information ul {
       list-style: none; }
   .project__description {
